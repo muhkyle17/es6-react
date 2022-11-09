@@ -155,3 +155,22 @@ class Person {
 
 const thirdPerson = new Person('Mosh')
 thirdPerson.walk()
+
+/// Inheritance
+// The "super" is crucial
+class Teacher extends Person {
+  constructor(name, degree) {
+    super(name)
+    this.degree = degree
+  }
+
+  teach() {
+    console.log('teach')
+  }
+}
+
+const teacher = new Teacher('Mosh', 'MSc')
+teacher.walk()
+teacher.teach()
+console.log(teacher.degree)
+console.log(teacher.name)
