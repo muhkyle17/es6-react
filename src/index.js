@@ -1,3 +1,5 @@
+import { Teacher } from './teacher'
+
 // function sayHello() {
 //   for (var i = 0; i < 5; i++) {
 //     console.log(i)
@@ -143,34 +145,36 @@ const cloneObject = { ...first2 }
 //     console.log('walk')
 //   },
 // }
-class Person {
-  constructor(name) {
-    this.name = name
-  }
 
-  walk() {
-    console.log('walk')
-  }
-}
+// class Person {
+//   constructor(name) {
+//     this.name = name
+//   }
 
-const thirdPerson = new Person('Mosh')
-thirdPerson.walk()
+//   walk() {
+//     console.log('walk')
+//   }
+// }
+
+// const thirdPerson = new Person('Mosh')
+// thirdPerson.walk()
 
 /// Inheritance
 // The "super" is crucial
-class Teacher extends Person {
-  constructor(name, degree) {
-    super(name)
-    this.degree = degree
-  }
+// class Teacher extends Person {
+//   constructor(name, degree) {
+//     super(name)
+//     this.degree = degree
+//   }
 
-  teach() {
-    console.log('teach')
-  }
-}
+//   teach() {
+//     console.log('teach')
+//   }
+// }
 
 const teacher = new Teacher('Mosh', 'MSc')
-teacher.walk()
+// teacher.walk()
+// teacher.teach()
+// console.log(teacher.degree)
+// console.log(teacher.name)
 teacher.teach()
-console.log(teacher.degree)
-console.log(teacher.name)
