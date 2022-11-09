@@ -1,4 +1,8 @@
-import { Teacher } from './teacher'
+// Curly braces are only used when we want to get named exports
+// Remove the curly braces for "export default" functions
+// Default -> import ... from '';
+// Name ->  import { ... } from '';
+import Teacher, { promote } from './teacher'
 
 // function sayHello() {
 //   for (var i = 0; i < 5; i++) {
