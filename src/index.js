@@ -182,3 +182,5 @@ const teacher = new Teacher('Mosh', 'MSc')
 // console.log(teacher.degree)
 // console.log(teacher.name)
 teacher.teach()
+
+promote()
